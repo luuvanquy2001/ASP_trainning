@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="lab4.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        ﻿body {
+    font-family: Arial,sans-serif;
+    margin: 0px;
+    padding: 30px
+}
+
+table {
+    border: 2px solid black;
+    width: 50%;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid black;
+    width: 30%;
+}
+
+.row-1 {
+    text-align: center;
+}
+
+.row-2 {
+    height: 500px;
+}
+
+.row-3 {
+    text-align: center;
+}
+.row-2-col-1{
+    width:30%;
+}
+.row-2-col-2 {
+    width: 70%;
+}
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+            <tr class="row-1">
+                <td colspan="2">
+                    ASP.NET
+                </td>
+            </tr>
+            <tr class="row-2">
+                <td class="row-2-col-1">
+                    <div>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/bai2.aspx">Tính ước số lớn nhất(a và b)</asp:HyperLink>
+                    </div>
+                     <div>
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/bai3.aspx">Đăng ký thông tin cá nhân sinh viên</asp:HyperLink>
+                    </div>
+                </td>
+                <td class="row-2-col-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        Trang Chủ
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr class="row-3">
+                <td colspan="3">Design by (Họ và tên sinh viên)</td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>
