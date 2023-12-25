@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace lap3
+namespace lab3
 {
     public partial class custom : System.Web.UI.Page
     {
