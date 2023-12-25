@@ -1,0 +1,40 @@
+﻿﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.Master.cs" Inherits="lab5.Page" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/bai5.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+       <table>
+            <tr class="row-1">
+                <td colspan="2"> 
+                   HỌ VÀ TÊN SINH VIÊN - LỚP
+                </td>
+            </tr>
+            <tr class="row-2">
+                <td class="row-2-col-1">
+                    <div>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/MonHoc.aspx">Cập nhật Môn học</asp:HyperLink>
+                    </div>
+                     <div>
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/TimMonHoc.aspx">Tìm kiếm Môn Học</asp:HyperLink>
+                    </div>
+                </td>
+                <td class="row-2-col-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr class="row-3">
+                <td colspan="3"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
